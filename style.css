@@ -1,0 +1,324 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: sans-serif;
+}
+#tepa .boy{
+	background-image: url('img/guldu.jpg');
+	background-position: top;
+	background-size: cover;
+	height: 200px;
+}
+.searchForma{
+	float: right;
+	margin: 0px;
+	padding: 0px;
+	display: inline-block;
+}
+.forma{
+	display: block;
+}
+#header{
+	background-color: #333;
+}
+.qidTizim{
+	border-bottom: 1px solid #233;
+	text-align: left;
+	margin-top: 7px;
+}
+.qidTizim label{
+	margin-left: 7px;
+}
+.qidiruv{
+	margin-top: 30px;
+	margin-bottom: 10px;
+}
+.qidTizim.fio{
+	margin-top: 40px;
+}
+#header a{
+	text-decoration: none;
+	color: #fff;
+	transition: color .3s ease;
+}
+
+#header a:hover{
+	
+	color: coral;
+}
+#header .menu{
+	display: inline-block;
+	padding: 20px;
+	/*margin: 20px;*/
+}
+
+#header li{
+	font-size: 20px;
+	padding-left: 10px;
+	font-family: sans-serif;
+	list-style-type: none;
+	display: inline-block;
+}
+#header .search{
+	float: right;
+	padding: 5px 0px;
+	margin: 20px;
+	border-radius: 5px;
+	border: none;
+}
+#header .check{
+	margin-left: 15px;
+	display: none;
+	cursor: pointer;
+}
+.container{
+	width: 90%;
+	margin: auto;
+}
+.container h1{
+	font-size: 30px;
+}
+.container .box{
+	width: 25%;
+	float: left;
+	text-align: center;
+	padding-top: 30px;
+}
+.batafsil{
+	border: none;
+}
+.btn{
+	padding: 3px 20px;
+	text-decoration: none;
+	text-align: center;
+	color: #333;
+	font-size: 18px;
+	border: none;
+	background-color: #ff9;
+}
+.btn:hover{
+	background-color: #000;
+	color:  #fff;
+	cursor: pointer;
+}
+.btns{
+	padding: 3px 20px;
+	text-align: center;
+	text-decoration: none;
+	font-size: 18px;
+	color: #ff9;
+	border: none;
+	background-color: #000;
+}
+.insertTalaba{
+	text-align: center;
+	padding-top: 10px;
+}
+.btns:hover{
+	background-color: #ff9;
+	color:  #000;
+	cursor: pointer;
+}
+.talaba{
+	padding: 0px;
+	font-size: 16px;
+}
+#header .belgi{
+	background-color: #ff9;
+	padding-right: 5px;
+	color: black;
+}
+#BoshTana h1{
+	text-align: center;
+	font-size: 30px;
+	padding: 20px 0px;
+}
+#kurs1 h1{
+	text-align: center;
+	font-size: 30px;
+	padding-top: 30px;
+}
+#kurs1 .box1{
+	text-align: center;
+	width: 50%;
+	margin-bottom: 20px;
+	float: left;
+	box-sizing: border-box;
+}
+
+#kurs1 .box1 img{
+	width: 90%;
+	padding: 40px;
+	border-radius: 50%;
+}
+#kurs11 .button{
+	margin: 20px 0px;
+}
+#kurs1 p{
+	margin-bottom: 10px;
+}
+#kurs11{
+	text-align: center;
+}
+#kurs11 a{
+	text-decoration: none;
+	
+}
+.kurs1_11Forma{
+	padding: 20px;
+}
+
+#kurs1_11 input{
+	display: block;
+	width: 100%;
+	padding: 5px 0px;
+	margin: 5px 0px;
+	margin-bottom: 20px;
+}
+#kurs1_11 label{
+	margin-top: 20px;
+}
+#kurs1_11 .button{
+	margin-bottom: 20px;
+	margin-top: 10px;
+}
+.footer{
+	background-color: #333;
+	text-align: center;
+	padding: 30px 0;
+}
+.footer p{
+	text-align: center;
+	color: #fff;
+	padding-bottom: 10px;
+}
+.clr{
+	clear: both;
+}
+/* @media bilan ishlash */
+
+@media only screen and (max-width: 780px){
+	#header{
+		display: block;
+		position: relative;
+		top: 50px;
+		left: 0px;
+		z-index: 1px;
+		background: none;
+	}
+	
+	#header .check{
+		display: block;
+		width: 40px;
+		height: 32px;
+		position: absolute;
+		top: -7px;
+		left: 2px;
+		z-index: 2;
+		opacity: 0;
+	}
+	#header span{
+		display: block;
+		width: 34px;
+		left: 20px;
+		height: 4px;
+		margin-bottom: 5px;
+		background-color: #222;
+		border-radius: 3px;
+		z-index: 1;
+		position: relative;
+		transform-origin: 4px 0px;
+		transition: background 0.5s cubic-bezier(0.77, 0.2, 0.05, 1)opacity .5s ease;
+	}
+	#header span:first-child{
+		transform-origin: 0% 0%;
+	}
+	#header span:nth-last-child(2){
+		transform-origin: 0% 100%;
+	}
+	#header .check:checked ~ span{
+		opacity: 1;
+		background: #232323;
+	}
+	#header .check:checked ~ span:nth-last-child(odd){
+		opacity: 1;
+		transform: rotate(40deg) translate(2px, 2px);
+	}
+	#header .check:checked ~ span:nth-last-child(even){
+		opacity: 0;
+		transform: rotate(0deg) translate(2px, 2px);
+	}
+	#header .check:checked ~ span:nth-last-child(3){
+		opacity: 1;
+		margin-top: 8px;
+		transform: rotate(-49deg) translate(2px, 2px);
+	}
+	#header .menu{
+		position: absolute;
+		width: auto;
+		margin: 0px;
+		padding: 5px;
+		padding-top: 5px;
+		padding-bottom: 5px;
+		background-color: #4f9a5a;
+		list-style: none;
+		transform-origin: 0 0;
+		transform: translate(-100%, 0);
+		transition: transform .5s ease;
+	}
+	#header li{
+		display: block;
+		padding-top: 5px;
+		padding-bottom: 5px;
+		text-align: center;
+	}
+	#header .check:checked ~ ul{
+		transform: none;
+	}
+	.boy {
+		height: 130px;
+		background-color: yellow;
+	}
+
+	#header a{
+		color: #000;
+	}
+	#header .search{
+
+	}
+	.container{
+		width: 100%;
+	}
+	.container .box{
+	width: 50%;
+	float: left;
+	text-align: center;
+	padding-top: 30px;
+
+	}
+
+}
+
+
+
+
+@media only screen and (max-width: 360px){
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
